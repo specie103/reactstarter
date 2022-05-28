@@ -1,10 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-// cleanup function
-// second argument
+const UseEffectBasics = () => {
+  const [initialValue, setValue] = useState(0);
+  useEffect(() => {
+    console.log("call useEffect");
+    if (initialValue > 0) {
+      document.title = `New Messages(${initialValue})`;
+    }
+  }, []);
 
-const UseEffectCleanup = () => {
-  return <h2>useEffect cleanup</h2>;
+  console.log("render component");
+  return (
+    <>
+      <h1>{initialValue}</h1>
+      <button className="btn" onClick={() => setValue(initialValue + 1)}>
+        click me
+      </button>
+    </>
+  );
 };
 
-export default UseEffectCleanup;
+export default UseEffectBasics;

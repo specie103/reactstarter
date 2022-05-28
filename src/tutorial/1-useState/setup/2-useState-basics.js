@@ -1,7 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-const UseStateBasics = () => {
-  return <h2>useState basic example</h2>;
+const UsingUseState = () => {
+  const [initialText, changedText] = useState("The Initial Title");
+  const ChangeTitle = () => {
+    if (initialText === "The Initial Title") {
+      changedText('This is the Click Button Title');
+    } else {
+      changedText("The Initial Title");
+    }
+  };
+  return (
+    <React.Fragment>
+      <h1>{initialText}</h1>
+      <button type="button" className="btn" onClick={ChangeTitle}>
+        change title
+      </button>
+    </React.Fragment>
+  );
 };
 
-export default UseStateBasics;
+export default UsingUseState;

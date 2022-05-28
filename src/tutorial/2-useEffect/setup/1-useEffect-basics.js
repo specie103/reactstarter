@@ -1,9 +1,23 @@
-import React, { useState, useEffect } from 'react';
-// by default runs after every re-render
-// cleanup function
-// second parameter
+import React, { useState, useEffect } from "react";
+
 const UseEffectBasics = () => {
-  return <h2>useEffect Basics</h2>;
+  const [initialValue, setValue] = useState(0);
+  useEffect(() => {
+    console.log("call useEffect");
+    if (initialValue > 0) {
+      document.title = `New Messages(${initialValue})`;
+    }
+  });
+
+  console.log("render component");
+  return (
+    <>
+      <h1>{initialValue}</h1>
+      <button className="btn" onClick={() => setValue(initialValue + 1)}>
+        click me
+      </button>
+    </>
+  );
 };
 
 export default UseEffectBasics;

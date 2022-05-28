@@ -5,7 +5,7 @@ const UseStateObject = () => {
     name: 'peter',
     age: 24,
     message: 'random message',
-  });
+  }); 
 
   // const [name,setName] = useState('peter')
   // const [age,setAge] = useState(24)

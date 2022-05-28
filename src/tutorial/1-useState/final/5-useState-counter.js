@@ -16,7 +16,7 @@ const UseStateCounter = () => {
     }, 2000);
   };
 
-  return (
+  return ( 
     <>
       <section style={{ margin: '4rem 0' }}>
         <h2>regular counter</h2>

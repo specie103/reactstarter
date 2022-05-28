@@ -4,8 +4,12 @@ import React, { useEffect, useRef } from 'react';
 // DOES NOT trigger re-render
 // target DOM nodes/elements
 
-const UseRefBasics = () => {
-  return <h2>useRef</h2>;
-};
+// const UseRefBasics = () => {
+//   return (
+//     const handleSubmit = (e)=>{
+//       e.preventDefault
+//     }
+//   );
+// };
 
 export default UseRefBasics;

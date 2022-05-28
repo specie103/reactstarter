@@ -13,6 +13,7 @@ const ErrorExample = () => {
       <button type='button' className='btn' onClick={handleClick}>
         change title
       </button>
+      <h3>{title}</h3>
     </React.Fragment>
   );
 };
