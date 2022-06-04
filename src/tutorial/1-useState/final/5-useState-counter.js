@@ -14,7 +14,7 @@ const UseStateCounter = () => {
         return prevState + 1;
       });
     }, 2000);
-  };
+  }; 
 
   return ( 
     <>

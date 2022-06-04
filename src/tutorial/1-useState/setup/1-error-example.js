@@ -10,7 +10,7 @@ const NewErrorExample = () => {
   return (
     <React.Fragment>
       <div>
-        <h2>{title}</h2>
+        <h5>{title}</h5>
         <button className="btn" type="button" onClick={handleClickButton}>
           Click to Change Title
         </button>

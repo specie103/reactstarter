@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const UseEffectBasics = () => {
+const UseEffectBasicsCleanup = () => {
   const [initialValue, setValue] = useState(0);
   useEffect(() => {
     console.log("call useEffect");
@@ -20,4 +20,4 @@ const UseEffectBasics = () => {
   );
 };
 
-export default UseEffectBasics;
+export default UseEffectBasicsCleanup;

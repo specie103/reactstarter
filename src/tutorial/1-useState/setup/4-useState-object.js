@@ -10,8 +10,10 @@ const UseStateObject = () => {
   const changeMessage = () => {
     if (person.name ==='peter') {
       setPerson({ ...person, message: 'Hello John', name: 'John', age: 50 });
-    } else {
+    }else if (person.name ==='John') {
       setPerson({ ...person, message: 'Hello Mathew', name: 'Mathew', age: 24 });
+    }else {
+      setPerson({ ...person, message: 'Hello Peter', name: 'peter', age: 24 });
     }
     
     // setMessage('hello world')

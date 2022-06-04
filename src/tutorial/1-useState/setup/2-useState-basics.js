@@ -11,7 +11,7 @@ const UsingUseState = () => {
   };
   return (
     <React.Fragment>
-      <h1>{initialText}</h1>
+      <h5>{initialText}</h5>
       <button type="button" className="btn" onClick={ChangeTitle}>
         change title
       </button>
